@@ -37,4 +37,20 @@ public class TestStudent extends TestCase {
         Student stu = new Student(5, 15);
         assertEquals(0, stu.validate());
     }
+    public void test10() {
+        Student stu = new Student(-0.1, 7);
+        assertEquals(-1, stu.validate());
+    }
+    public void test11() {
+        Student stu = new Student(10.1, 7);
+        assertEquals(-1, stu.validate());
+    }
+    public void test12() {
+        Student stu = new Student(5, -1);
+        assertEquals(-1, stu.validate());
+    }
+    public void test13() {
+        Student stu = new Student(5, 16);
+        assertEquals(-1, stu.validate());
+    }
 }
