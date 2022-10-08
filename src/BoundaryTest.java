@@ -1,6 +1,6 @@
 import junit.framework.TestCase;
 
-public class TestStudent extends TestCase {
+public class BoundaryTest extends TestCase {
     public void test1() {
         Student stu = new Student(0, 7);
         assertEquals(0, stu.validate());
